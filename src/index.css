@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.body{
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+}
+.root{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.Header{
+  width: 100%;
+  margin-top: 30px;
+  color: #000;
+  text-align: center;
+}
+.SearchBar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.SearchBar input[type='search']{
+  border: 1px solid #000;
+  width: 250px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: medium;
+}
+.WeatherMain{
+  position: relative;
+  left:-10px;
+  width: 80%;
+  height: 90%;
+  text-align: center;
+}
+.Date{
+  position: absolute;
+  left: -16px;
+  width: 100%;
+  margin: 25px;
+}
+.WeatherIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+.WeatherIcon sup{
+  position: relative;
+  font-size: 18px;
+  top: 10px;
+}
+.WeatherIcon span{
+  position: relative;
+  top: 25px;
+  vertical-align: super;
+}
+.WeatherIcon img{
+  border-radius: 50%;
+  top: 2px;
+}
+.WeatherDescription{
+  position: relative;
+  left: -16px;
+  width: 100%;
+  margin: 25px;
+  font-size: large;
+}
+.WindSpeed{
+  position: relative;
+  left: -13px;
+  width: 100%;
+  margin: 25px;
+}
