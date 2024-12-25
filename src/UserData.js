@@ -7,7 +7,7 @@ const UserData = () => {
         e.preventDefault();
         const temp=`Hi ${userData.name}, the current temperature is ${Math.round(weather.weather.main.temp)}°C.`
          const recommend = Math.round(weather.weather.main.temp) >= userData.minTemp && Math.round(weather.weather.main.temp) <= userData.maxTemp ? (
-                `Hi ${userData.name}, based on your preferences, it's safe to go out!`) : (
+                `Based on your preferences, it's safe to go out!`) : (
                 `It's too cold/hot for your preference. Consider staying indoors!`)
         setResult({
             tempResult:temp,
