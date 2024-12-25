@@ -3,6 +3,7 @@ import DataContext from './Context/dataContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import { Oval } from 'react-loader-spinner';
+import { Link } from 'react-router-dom';
 
 const Weather = () => {
   const { weather, toWeatherDate } = useContext(DataContext)
@@ -35,6 +36,9 @@ const Weather = () => {
           <div className='WindSpeed'>
             <h3>Wind Speed: {weather.weather.wind.speed} m/s</h3>
           </div>
+          <nav className='CheckUser'>
+            <Link to='/checkuser'>Check User</Link>
+          </nav>
         </div>}
     </>
   )

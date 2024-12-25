@@ -10,6 +10,13 @@ export const DataHandle=({children})=>{
         isLoading:false,
         error:''
     })
+    const [userData,setUserData]=useState({
+        name:'',
+        age:'',
+        minTemp:'',
+        maxTemp:''
+    })
+    const [result,setResult]=useState(null);
     const toWeatherDate=()=>{
         const Weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         const month=[
@@ -61,7 +68,7 @@ export const DataHandle=({children})=>{
         },[])
     return(
         <DataContext.Provider
-        value={{search,setSearch,toWeatherDate,weather,setWeather,input}}
+        value={{search,setSearch,toWeatherDate,weather,setWeather,input,userData,setUserData,result,setResult}}
         >
             {children}
         </DataContext.Provider>
