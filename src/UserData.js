@@ -9,7 +9,7 @@ const UserData = () => {
          const recommend = Math.round(weather.weather.main.temp) >= userData.minTemp && Math.round(weather.weather.main.temp) <= userData.maxTemp ? (
                 `Based on your preferences, it's safe to go out!`) : (
                 `It's too cold/hot for your preference. Consider staying indoors!`)
-        setResult({
+        setResult({ 
             tempResult:temp,
             recommandResult:recommend
         });

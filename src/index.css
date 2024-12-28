@@ -3,11 +3,8 @@
   padding: 0%;
   box-sizing: border-box;
 }
-.body{
-  width: 100vw;
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
+body{
+  background-color: #000;
 }
 .root{
   flex-grow: 1;
@@ -18,18 +15,17 @@
 }
 
 .App{
-  height: 100vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  background-color: #00ff7f;
+  
 }
 .Header{
   width: 100%;
   margin-top: 30px;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 .SearchBar{
@@ -52,6 +48,7 @@
   width: 80%;
   height: 90%;
   text-align: center;
+  color: #fff;
 }
 .Date{
   position: absolute;
@@ -60,7 +57,7 @@
   margin: 25px;
 }
 .WeatherIcon{
-  height: 150px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,8 +74,8 @@
   vertical-align: super;
 }
 .WeatherIcon img{
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   top: 2px;
   border-radius: 50%;
 }
