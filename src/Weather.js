@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import { Oval } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
+import myImage from './Images/Chicken.jpg';
+import samplegif from './Images/giphy.gif'
+import karthiMist from './Images/MistImage.jpg'
 
 const Weather = () => {
   const { weather, toWeatherDate } = useContext(DataContext)
@@ -26,7 +29,9 @@ const Weather = () => {
             <h3>{toWeatherDate()}</h3>
           </div><br></br><br></br>
           <div className='WeatherIcon'>
-            <img src={`https://openweathermap.org/img/wn/${weather.weather.weather[0].icon}@2x.png`} alt={weather.weather.weather[0].description} />
+            {console.log(weather.weather.weather[0].description)}
+            {weather.weather.weather[0].description==="mist"?<img src={karthiMist} alt={weather.weather.weather[0].description} />
+            :<img src={`https://openweathermap.org/img/wn/${weather.weather.weather[0].icon}@2x.png`} alt={weather.weather.weather[0].description}/>}
             <span>{Math.round(weather.weather.main.temp)}</span>
             <sup>°C</sup>
           </div>
