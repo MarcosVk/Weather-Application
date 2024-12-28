@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import { Oval } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
-import myImage from './Images/Chicken.jpg';
-import samplegif from './Images/giphy.gif'
 import karthiMist from './Images/MistImage.jpg'
 
 const Weather = () => {
