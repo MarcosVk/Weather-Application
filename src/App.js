@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <DataHandle>
-        <Header title="Mega's Weather Application" />
+        <Header title="Weather Application" />
         <Routes>
         <Route path="/" element={<><SearchBar/><Weather /></>} />
           <Route path="/checkuser" element={<UserData/>}/>

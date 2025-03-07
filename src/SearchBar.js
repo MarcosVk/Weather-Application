@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import DataContext from './Context/dataContext'
 
+
 const SearchBar = () => {
     const { search, setSearch,input } = useContext(DataContext)
     return (
